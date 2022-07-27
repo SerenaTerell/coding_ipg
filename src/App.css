@@ -1,0 +1,86 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/*Login-------------------------------------------------------------*/
+
+.login-holder{
+  background: #4d4d4d;
+  padding: 50px;
+  border-radius: 8px;;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
+.login-button{
+  margin-top: 5px;
+}
+
+/*Home-------------------------------------------------------------*/
+
+.home-holder{
+  background: #4d4d4d;
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.list-title{
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: start;
+}
+
+.citylist{
+  display: flex;
+  
+}
+
+.add-city{
+  display: flex;
+}
+
+.add-icon{
+  cursor: pointer;
+}
+
+.city{
+  display: flex;
+  width: 150px;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  justify-content: space-between
+}
+
+.city-name{
+  display: inline;
+  padding: 5px;
+}
+
+.delete-icon{
+  cursor: pointer;
+}
+
+/*Weather Card----------------------------------*/
+
+.weather-cards{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.weather-card{
+  background-color:darkgray;
+  border-radius: 8px;
+  width: 150px;
+}
