@@ -15,7 +15,6 @@ export default function Home(){
     })
 
     const weatherCards = weatherData.map(weather =>{
-        console.log(weather.comment)
         return <div className="weather-card">
                 <h2>{weather[0]}</h2>
                 <p>{weather[1].comment}</p>
@@ -27,6 +26,7 @@ export default function Home(){
     })
 
     React.useEffect(() => {
+        setWeatherData([])
         for(let i=0; i < cities.length;i++){
             let currentCity = cities[i];
             fetch("https://weatherdbi.herokuapp.com/data/weather/" + currentCity)
@@ -50,10 +50,7 @@ export default function Home(){
 
     function deleteCity(cityIndex){
         setCities(prevCities => prevCities.filter((city,index) => index !== cityIndex))
-        console.log("delete")
     }
-
-    console.log(weatherData)
 
     function handleChange(event) {
         setNewCity(event.target.value)

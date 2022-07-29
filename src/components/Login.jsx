@@ -22,7 +22,6 @@ export default function Login(props){
 
     function submitLogIn(){
         event.preventDefault()
-        console.log(loginData)
         if(loginData.username === "ipgautomotive" && loginData.password === "carmaker"){
             props.handleLogin()
         }else{

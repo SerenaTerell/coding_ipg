@@ -10,7 +10,6 @@ function App() {
 
   function login(){
     setloggedin( prevLoggedin => !prevLoggedin)
-    console.log(loggedin)
   }
 
   return (
